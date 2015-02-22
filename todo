@@ -1,0 +1,11 @@
+*Topics List(static)
+  -Design each cell.
+*Question List(dynamic)
+  -Mockup of a sigle cell.
+*Transition between the two previous lists
+*The answers display screen(At first just a basic mockup, to be complete after receive the StackOverflow data)
+*Transition between list and answer
+*Get StackOverflow data
+*Model StackOverflow data to the app
+*Integrate the StackOverflow data and the questions list
+*Integrate the StackOverflow data and the answer screen
