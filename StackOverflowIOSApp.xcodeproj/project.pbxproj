@@ -19,6 +19,7 @@
 		6F0898FF1A9A641C00A5D620 /* xcode.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F0898FE1A9A641C00A5D620 /* xcode.png */; };
 		6F0899031A9A65BF00A5D620 /* iphone-sim-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F0899021A9A65BF00A5D620 /* iphone-sim-icon.png */; };
 		6F0899071A9A66B000A5D620 /* coredata.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F0899061A9A66B000A5D620 /* coredata.png */; };
+		6F0899091A9ABC5900A5D620 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F0899081A9ABC5900A5D620 /* user.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		6F0898FE1A9A641C00A5D620 /* xcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xcode.png; sourceTree = "<group>"; };
 		6F0899021A9A65BF00A5D620 /* iphone-sim-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-sim-icon.png"; sourceTree = "<group>"; };
 		6F0899061A9A66B000A5D620 /* coredata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coredata.png; path = StackOverflowIOSApp/coredata.png; sourceTree = "<group>"; };
+		6F0899081A9ABC5900A5D620 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				6F0898DB1A9A58F000A5D620 /* ViewController.h */,
 				6F0898DC1A9A58F000A5D620 /* ViewController.m */,
 				6F0898DE1A9A58F000A5D620 /* Main.storyboard */,
+				6F0899081A9ABC5900A5D620 /* user.png */,
 				6F0899021A9A65BF00A5D620 /* iphone-sim-icon.png */,
 				6F0898E11A9A58F000A5D620 /* Images.xcassets */,
 				6F0898E31A9A58F000A5D620 /* LaunchScreen.xib */,
@@ -216,6 +219,7 @@
 			files = (
 				6F0899031A9A65BF00A5D620 /* iphone-sim-icon.png in Resources */,
 				6F0898E01A9A58F000A5D620 /* Main.storyboard in Resources */,
+				6F0899091A9ABC5900A5D620 /* user.png in Resources */,
 				6F0899071A9A66B000A5D620 /* coredata.png in Resources */,
 				6F0898FD1A9A63FA00A5D620 /* uikit.png in Resources */,
 				6F0898FB1A9A63C900A5D620 /* objc.png in Resources */,
