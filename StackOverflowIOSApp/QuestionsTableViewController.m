@@ -41,9 +41,21 @@
     question1.userName = @"I";
     question1.userPicture = [UIImage imageWithContentsOfFile:@"user.png"];
     [self.questions addObject:question1];
+    
+//    Question *question2 = [[Question alloc] init];
+//    question2.questionTitle = self.sectionName ;
+//    question2.questionScore = @50;
+//    question2.userName = @"Myself";
+//    question2.userPicture = [UIImage imageWithContentsOfFile:@"user.png"];
+//    [self.questions addObject:question2];
 }
 
 #pragma mark - Table view data source
+
+//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+//{
+//    return self.sectionName;
+//}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.

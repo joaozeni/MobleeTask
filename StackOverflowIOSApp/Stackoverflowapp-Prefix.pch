@@ -1,0 +1,18 @@
+//
+//  Stackoverflowapp-Prefix.pch
+//  StackOverflowIOSApp
+//
+//  Created by joao guilherme zeni on 26/02/15.
+//  Copyright (c) 2015 joao guilherme zeni. All rights reserved.
+//
+
+#ifndef StackOverflowIOSApp_Stackoverflowapp_Prefix_pch
+#define StackOverflowIOSApp_Stackoverflowapp_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#import <RestKit/RestKit.h>
+
+#endif

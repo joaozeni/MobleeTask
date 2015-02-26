@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BC82645F2D63FCA83932F6A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11308E91801589DE39DF226E /* libPods.a */; };
 		6F0898D71A9A58F000A5D620 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0898D61A9A58F000A5D620 /* main.m */; };
 		6F0898DA1A9A58F000A5D620 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0898D91A9A58F000A5D620 /* AppDelegate.m */; };
 		6F0898DD1A9A58F000A5D620 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0898DC1A9A58F000A5D620 /* ViewController.m */; };
@@ -24,6 +25,7 @@
 		6F08991E1A9D648E00A5D620 /* TopicsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F08991D1A9D648E00A5D620 /* TopicsTableViewController.m */; };
 		6F0899211A9D653D00A5D620 /* QuestionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0899201A9D653D00A5D620 /* QuestionsTableViewController.m */; };
 		6F0899271A9E63CE00A5D620 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0899261A9E63CE00A5D620 /* Topic.m */; };
+		6FC7A1B91A9F9308000E7D4B /* RemoteObject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6FC7A1B71A9F9308000E7D4B /* RemoteObject.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11308E91801589DE39DF226E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BB891A33426427AB707F7E4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6F0898D11A9A58F000A5D620 /* StackOverflowIOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverflowIOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F0898D51A9A58F000A5D620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F0898D61A9A58F000A5D620 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -64,6 +68,9 @@
 		6F0899201A9D653D00A5D620 /* QuestionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionsTableViewController.m; sourceTree = "<group>"; };
 		6F0899251A9E63CE00A5D620 /* Topic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topic.h; sourceTree = "<group>"; };
 		6F0899261A9E63CE00A5D620 /* Topic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Topic.m; sourceTree = "<group>"; };
+		6FC7A1B61A9F8E01000E7D4B /* Stackoverflowapp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stackoverflowapp-Prefix.pch"; sourceTree = "<group>"; };
+		6FC7A1B81A9F9308000E7D4B /* RemoteObject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RemoteObject.xcdatamodel; sourceTree = "<group>"; };
+		D7DC8BA43CE3921B5C511FCA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BC82645F2D63FCA83932F6A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +98,8 @@
 				6F0898D31A9A58F000A5D620 /* StackOverflowIOSApp */,
 				6F0898ED1A9A58F000A5D620 /* StackOverflowIOSAppTests */,
 				6F0898D21A9A58F000A5D620 /* Products */,
+				A8836AA580BA76E0CB76B2D2 /* Pods */,
+				C7642F6466118919C87DEF37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +137,7 @@
 				6F08991D1A9D648E00A5D620 /* TopicsTableViewController.m */,
 				6F08991F1A9D653D00A5D620 /* QuestionsTableViewController.h */,
 				6F0899201A9D653D00A5D620 /* QuestionsTableViewController.m */,
+				6FC7A1B71A9F9308000E7D4B /* RemoteObject.xcdatamodeld */,
 			);
 			path = StackOverflowIOSApp;
 			sourceTree = "<group>";
@@ -136,6 +147,7 @@
 			children = (
 				6F0898D51A9A58F000A5D620 /* Info.plist */,
 				6F0898D61A9A58F000A5D620 /* main.m */,
+				6FC7A1B61A9F8E01000E7D4B /* Stackoverflowapp-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -157,6 +169,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A8836AA580BA76E0CB76B2D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BB891A33426427AB707F7E4 /* Pods.debug.xcconfig */,
+				D7DC8BA43CE3921B5C511FCA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C7642F6466118919C87DEF37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11308E91801589DE39DF226E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,9 +193,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F0898F41A9A58F000A5D620 /* Build configuration list for PBXNativeTarget "StackOverflowIOSApp" */;
 			buildPhases = (
+				2467FB4750A65BA1780146B0 /* Check Pods Manifest.lock */,
 				6F0898CD1A9A58F000A5D620 /* Sources */,
 				6F0898CE1A9A58F000A5D620 /* Frameworks */,
 				6F0898CF1A9A58F000A5D620 /* Resources */,
+				F51D1D3C2CCBF0A63BD157A4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -258,6 +289,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2467FB4750A65BA1780146B0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F51D1D3C2CCBF0A63BD157A4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6F0898CD1A9A58F000A5D620 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -267,6 +331,7 @@
 				6F0899151A9D608200A5D620 /* Question.m in Sources */,
 				6F0898DA1A9A58F000A5D620 /* AppDelegate.m in Sources */,
 				6F0898D71A9A58F000A5D620 /* main.m in Sources */,
+				6FC7A1B91A9F9308000E7D4B /* RemoteObject.xcdatamodeld in Sources */,
 				6F08991E1A9D648E00A5D620 /* TopicsTableViewController.m in Sources */,
 				6F0899271A9E63CE00A5D620 /* Topic.m in Sources */,
 				6F0899211A9D653D00A5D620 /* QuestionsTableViewController.m in Sources */,
@@ -391,6 +456,7 @@
 		};
 		6F0898F51A9A58F000A5D620 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BB891A33426427AB707F7E4 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StackOverflowIOSApp/Info.plist;
@@ -401,6 +467,7 @@
 		};
 		6F0898F61A9A58F000A5D620 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7DC8BA43CE3921B5C511FCA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StackOverflowIOSApp/Info.plist;
@@ -462,6 +529,7 @@
 				6F0898F61A9A58F000A5D620 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F0898F71A9A58F000A5D620 /* Build configuration list for PBXNativeTarget "StackOverflowIOSAppTests" */ = {
 			isa = XCConfigurationList;
@@ -470,8 +538,22 @@
 				6F0898F91A9A58F000A5D620 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6FC7A1B71A9F9308000E7D4B /* RemoteObject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6FC7A1B81A9F9308000E7D4B /* RemoteObject.xcdatamodel */,
+			);
+			currentVersion = 6FC7A1B81A9F9308000E7D4B /* RemoteObject.xcdatamodel */;
+			path = RemoteObject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6F0898C91A9A58F000A5D620 /* Project object */;
 }

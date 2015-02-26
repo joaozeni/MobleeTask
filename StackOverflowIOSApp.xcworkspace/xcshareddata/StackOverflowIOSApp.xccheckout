@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0E93589C-0DC9-4853-9A30-4D90E9D3C271</string>
+	<key>IDESourceControlProjectName</key>
+	<string>StackOverflowIOSApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FC104F2F5822F4D7E3961D1A31D379F7185325ED</key>
+		<string>github.com:joaozeni/MobleeTask.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>StackOverflowIOSApp.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FC104F2F5822F4D7E3961D1A31D379F7185325ED</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:joaozeni/MobleeTask.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FC104F2F5822F4D7E3961D1A31D379F7185325ED</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FC104F2F5822F4D7E3961D1A31D379F7185325ED</string>
+			<key>IDESourceControlWCCName</key>
+			<string>StackOverflowIOSApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
