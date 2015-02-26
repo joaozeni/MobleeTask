@@ -20,6 +20,10 @@
 		6F0899031A9A65BF00A5D620 /* iphone-sim-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F0899021A9A65BF00A5D620 /* iphone-sim-icon.png */; };
 		6F0899071A9A66B000A5D620 /* coredata.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F0899061A9A66B000A5D620 /* coredata.png */; };
 		6F0899091A9ABC5900A5D620 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F0899081A9ABC5900A5D620 /* user.png */; };
+		6F0899151A9D608200A5D620 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0899141A9D608200A5D620 /* Question.m */; };
+		6F08991E1A9D648E00A5D620 /* TopicsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F08991D1A9D648E00A5D620 /* TopicsTableViewController.m */; };
+		6F0899211A9D653D00A5D620 /* QuestionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0899201A9D653D00A5D620 /* QuestionsTableViewController.m */; };
+		6F0899271A9E63CE00A5D620 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0899261A9E63CE00A5D620 /* Topic.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +54,16 @@
 		6F0898FC1A9A63FA00A5D620 /* uikit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uikit.png; sourceTree = "<group>"; };
 		6F0898FE1A9A641C00A5D620 /* xcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xcode.png; sourceTree = "<group>"; };
 		6F0899021A9A65BF00A5D620 /* iphone-sim-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-sim-icon.png"; sourceTree = "<group>"; };
-		6F0899061A9A66B000A5D620 /* coredata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coredata.png; path = StackOverflowIOSApp/coredata.png; sourceTree = "<group>"; };
+		6F0899061A9A66B000A5D620 /* coredata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coredata.png; sourceTree = "<group>"; };
 		6F0899081A9ABC5900A5D620 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		6F0899131A9D608200A5D620 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		6F0899141A9D608200A5D620 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		6F08991C1A9D648E00A5D620 /* TopicsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicsTableViewController.h; sourceTree = "<group>"; };
+		6F08991D1A9D648E00A5D620 /* TopicsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicsTableViewController.m; sourceTree = "<group>"; };
+		6F08991F1A9D653D00A5D620 /* QuestionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionsTableViewController.h; sourceTree = "<group>"; };
+		6F0899201A9D653D00A5D620 /* QuestionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionsTableViewController.m; sourceTree = "<group>"; };
+		6F0899251A9E63CE00A5D620 /* Topic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topic.h; sourceTree = "<group>"; };
+		6F0899261A9E63CE00A5D620 /* Topic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Topic.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +87,6 @@
 		6F0898C81A9A58F000A5D620 = {
 			isa = PBXGroup;
 			children = (
-				6F0899061A9A66B000A5D620 /* coredata.png */,
 				6F0898D31A9A58F000A5D620 /* StackOverflowIOSApp */,
 				6F0898ED1A9A58F000A5D620 /* StackOverflowIOSAppTests */,
 				6F0898D21A9A58F000A5D620 /* Products */,
@@ -94,6 +105,7 @@
 		6F0898D31A9A58F000A5D620 /* StackOverflowIOSApp */ = {
 			isa = PBXGroup;
 			children = (
+				6F0899061A9A66B000A5D620 /* coredata.png */,
 				6F0898FE1A9A641C00A5D620 /* xcode.png */,
 				6F0898FC1A9A63FA00A5D620 /* uikit.png */,
 				6F0898FA1A9A63C900A5D620 /* objc.png */,
@@ -107,6 +119,14 @@
 				6F0898E11A9A58F000A5D620 /* Images.xcassets */,
 				6F0898E31A9A58F000A5D620 /* LaunchScreen.xib */,
 				6F0898D41A9A58F000A5D620 /* Supporting Files */,
+				6F0899131A9D608200A5D620 /* Question.h */,
+				6F0899141A9D608200A5D620 /* Question.m */,
+				6F0899251A9E63CE00A5D620 /* Topic.h */,
+				6F0899261A9E63CE00A5D620 /* Topic.m */,
+				6F08991C1A9D648E00A5D620 /* TopicsTableViewController.h */,
+				6F08991D1A9D648E00A5D620 /* TopicsTableViewController.m */,
+				6F08991F1A9D653D00A5D620 /* QuestionsTableViewController.h */,
+				6F0899201A9D653D00A5D620 /* QuestionsTableViewController.m */,
 			);
 			path = StackOverflowIOSApp;
 			sourceTree = "<group>";
@@ -244,8 +264,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F0898DD1A9A58F000A5D620 /* ViewController.m in Sources */,
+				6F0899151A9D608200A5D620 /* Question.m in Sources */,
 				6F0898DA1A9A58F000A5D620 /* AppDelegate.m in Sources */,
 				6F0898D71A9A58F000A5D620 /* main.m in Sources */,
+				6F08991E1A9D648E00A5D620 /* TopicsTableViewController.m in Sources */,
+				6F0899271A9E63CE00A5D620 /* Topic.m in Sources */,
+				6F0899211A9D653D00A5D620 /* QuestionsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
