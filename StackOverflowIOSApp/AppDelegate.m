@@ -17,7 +17,43 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self setupRestKit];
     return YES;
+}
+
+- (void)setupRestKit{
+    // initiate Object Manager, Model & Store
+    RKObjectManager *manager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:@"http://api.stackexchange.com/2.2/"]];
+    NSManagedObjectModel *managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
+    RKManagedObjectStore *managedObjectStore = [[RKManagedObjectStore alloc] initWithManagedObjectModel:managedObjectModel];
+    manager.managedObjectStore = managedObjectStore;
+    
+    // define Entity mapping to core data
+    RKEntityMapping *userMapping = [RKEntityMapping mappingForEntityForName:@"Question" inManagedObjectStore:managedObjectStore];
+    userMapping.identificationAttributes = @[ @"qid" ];
+    NSArray *mappingArray = @[@"qid", @"questionTitle", @"questionScore", @"userName", @"userPicture"];
+    [userMapping addAttributeMappingsFromArray:mappingArray];
+    
+    // Core Data stack initialization
+//    [managedObjectStore createPersistentStoreCoordinator];
+//    NSString *storePath = [RKApplicationDataDirectory() stringByAppendingPathComponent:@"LearnRestKit.sqlite"];
+//    NSError *error;
+//    NSPersistentStore *persistentStore =
+//    [managedObjectStore addSQLitePersistentStoreAtPath:storePath
+//                                fromSeedDatabaseAtPath:nil
+//                                     withConfiguration:nil
+//                                               options:@{
+//                                                         NSMigratePersistentStoresAutomaticallyOption:@YES,
+//                                                         NSInferMappingModelAutomaticallyOption:@YES
+//                                                         }
+//                                                 error:&error];
+//    NSAssert(persistentStore, @"Failed to add persistent store with error: %@", error);
+    
+    // Create the managed object contexts
+    [managedObjectStore createManagedObjectContexts];
+    // Configure a managed object cache to ensure we do not create duplicate objects
+    managedObjectStore.managedObjectCache = [[RKInMemoryManagedObjectCache alloc]
+                                             initWithManagedObjectContext:managedObjectStore.persistentStoreManagedObjectContext];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -8,6 +8,7 @@
         <relationship name="question" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Question" inverseName="answers" inverseEntity="Question" syncable="YES"/>
     </entity>
     <entity name="Question" parentEntity="RemoteObject" syncable="YES">
+        <attribute name="qid" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="score" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
@@ -20,6 +21,6 @@
     <elements>
         <element name="RemoteObject" positionX="-171" positionY="-378" width="128" height="58"/>
         <element name="Answer" positionX="-369" positionY="-73" width="144" height="118"/>
-        <element name="Question" positionX="-92" positionY="-90" width="128" height="118"/>
+        <element name="Question" positionX="-92" positionY="-90" width="128" height="133"/>
     </elements>
 </model>

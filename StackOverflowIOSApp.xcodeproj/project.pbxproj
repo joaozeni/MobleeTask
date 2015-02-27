@@ -193,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F0898F41A9A58F000A5D620 /* Build configuration list for PBXNativeTarget "StackOverflowIOSApp" */;
 			buildPhases = (
+				6FC7A1BB1A9FD5E8000E7D4B /* Run Script */,
 				2467FB4750A65BA1780146B0 /* Check Pods Manifest.lock */,
 				6F0898CD1A9A58F000A5D620 /* Sources */,
 				6F0898CE1A9A58F000A5D620 /* Frameworks */,
@@ -304,6 +305,20 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		6FC7A1BB1A9FD5E8000E7D4B /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/zsh;
+			shellScript = "mogenerator --model \"${PROJECT_DIR}/StackOverflowIOSApp/RemoteObject.xcdatamodeld/RemoteObject.xcdatamodel\" --output-dir \"${PROJECT_DIR}/StackOverflowIOSApp\" --template-var arc=true";
 		};
 		F51D1D3C2CCBF0A63BD157A4 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;

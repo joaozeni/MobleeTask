@@ -8,6 +8,7 @@
 
 #import "QuestionsTableViewController.h"
 #import "Question.h"
+#import <RestKit/RestKit.h>
 
 @interface QuestionsTableViewController ()
 
@@ -20,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.questions = [[NSMutableArray alloc] init];
-    [self loadTestData];
+    [self loadQuestions];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -32,6 +33,44 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)loadQuestions
+{
+    // Enable Activity Indicator Spinner
+    [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
+    
+    RKObjectManager *manager = [RKObjectManager sharedManager];
+    
+    // Now for the object mappings
+    RKEntityMapping* questionMapping = [RKEntityMapping mappingForEntityForName:@"Question" inManagedObjectStore:manager.managedObjectStore];
+    NSArray *mappingArray = @[@"qid", @"questionTitle", @"questionScore", @"userName", @"userPicture"];
+    [questionMapping addAttributeMappingsFromArray:mappingArray];
+    
+    questionMapping.identificationAttributes = @[ @"qid" ];
+    
+    // register mappings with the provider using a response descriptor
+    
+    RKResponseDescriptor *responseDescriptor =
+    [RKResponseDescriptor responseDescriptorWithMapping:questionMapping
+                                                 method:RKRequestMethodGET
+                                            pathPattern:[NSString stringWithFormat:@"/questions?page=1&pagesize=20&order=desc&sort=activity&tagged=%@&site=stackoverflow", self.sectionName]
+                                                keyPath:nil
+                                            statusCodes:[NSIndexSet indexSetWithIndex:200]];
+    
+    [manager addResponseDescriptor:responseDescriptor];
+    
+    NSDictionary *queryParams = @{@"user": @"username"};
+    [manager getObjectsAtPath:@"/complaints"
+                   parameters:queryParams
+                      success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+                          NSArray *arout = mappingResult.array;
+                          NSLog(@"complaints: %@", arout);
+                      }
+                      failure:^(RKObjectRequestOperation *operation, NSError *error) {
+                          NSLog(@"Error response': %@", error);
+                      }];
+    
 }
 
 - (void)loadTestData {

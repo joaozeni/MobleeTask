@@ -10,4 +10,10 @@
 
 @implementation Question
 
+@dynamic qid;
+@dynamic questionTitle;
+@dynamic questionScore;
+@dynamic userName;
+@dynamic userPicture;
+
 @end
